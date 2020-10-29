@@ -1,0 +1,81 @@
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    .header {
+        align-items: center;
+        .label {
+            font-weight: bold;
+            font-size: 35px;
+        }
+
+    }
+    .body {
+        height: 100%;
+        width: 100%;
+        margin: 8px;
+        border: 1px solid #808080;
+        border-radius: 5px;
+        .taux {
+            margin: 5px;
+            .label {
+                color: #808080;
+                font-weight: normal;
+                font-family: Robotto;
+                font-size: 20px;
+            }
+            .value {
+                font-weight: bold;
+                font-family: Robotto;
+                font-size: 30px;
+            }
+        }
+        .input {
+            .euro {
+                .input {
+                    height: 20px;
+                    border: 1px solid #808080;
+                    border-radius: 5px;
+                    margin: 3px;
+                }
+            }
+            .toggleButton {
+                margin: 5px;
+                mat-button-toggle-group {
+                    border-radius: 5px;
+                    mat-button-toggle {
+                        border: 0.5px solid #6495ED;
+                    }
+                    .mat-button-toggle-checked {
+                        background-color: #6495ED;
+                    }
+                    
+
+                }
+                
+            }
+        }
+        .fixedtaux {
+            margin-bottom: 8px;
+            .checkboxLabel {
+                color: #808080 ;
+                font-weight: normal;
+                font-family: Robotto;
+                font-size: 15px;
+            }
+            .input {
+                height: 20px;
+                border: 1px solid #808080;
+                border-radius: 5px;
+                margin: 5px;
+            }
+            .alert {
+                background-color: white;
+                color: red;
+                padding: 0px;
+            } 
+        }
+       
+    }
+}

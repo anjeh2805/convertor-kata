@@ -1,0 +1,25 @@
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Taux réel</th>
+                <th scope="col">Taux Fixe</th>
+                <th scope="col">Valeur Initiale</th>
+                <th scope="col">Valeur convertie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of rowData; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>
+                    {{ data.rate }}
+                </td>
+                <td>{{ data.fixedRate | number }}</td>
+                <td>{{ data.initialValue | number | currency: data.initialDevise }}</td>
+                <td>{{ data.calculatedValue | number | currency: data.calculatedDevise }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
